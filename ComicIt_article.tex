@@ -1,0 +1,72 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Template for a LaTex article in English.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+\usepackage[utf8]{inputenc} 
+\usepackage[spanish]{babel}
+\usepackage{amsmath, amsthm, amsfonts}
+
+
+% Theorems
+%-----------------------------------------------------------------
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+
+% Shortcuts.
+% One can define new commands to shorten frequently used
+% constructions. As an example, this defines the R and Z used
+% for the real and integer numbers.
+%-----------------------------------------------------------------
+\def\RR{\mathbb{R}}
+\def\ZZ{\mathbb{Z}}
+
+% Similarly, one can define commands that take arguments. In this
+% example we define a command for the absolute value.
+% -----------------------------------------------------------------
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+
+% Operators
+% New operators must defined as such to have them typeset
+% correctly. As an example we define the Jacobian:
+% -----------------------------------------------------------------
+\DeclareMathOperator{\Jac}{Jac}
+
+%-----------------------------------------------------------------
+\title{COMIC IT!}
+\author{Ana Arias\\Liliana Ramos\\Denny Schuldt\\
+  \small Facultad de Ingeniería Eléctrica y Computación\\
+  \small Escuela Superior Politécnica del Litoral\\
+  \small Ecuador
+}
+
+\begin{document}
+	\maketitle
+	\abstract{Comic It! es una entrenida aplicación dedicada a jóvenes divertidos, en la cual pueden convertir una simple fotografía en una increible caricatura, llena de humor, colores y divertidos personajes.}
+		\section{FUNCIONALIDADES}
+		Comic It! cuenta con una variedad de funcionalidades que el usuario puede usar de manera rápida y dinámica utilizando fotos tomadas directamente de la CÁMARA o de la GALERÍA FOTOGRÁFICA .
+		El usuario tendrá la opción de crear un collage tipo caricatura  con fotografías de la galería de fotos del celular en una plantilla escogida de una LISTA DE PLANTILLAS proporcionadas por la aplicación.
+		Comic It! cuenta con una LISTA DE ÍCONOS básicos y personalizados que permitirán al usuario crear imágenes más reales y divertidas.		
+		Además de íconos, el usuario tendrá una LISTA DE TEXTOS divertidos para darle mas creatividad a las escenas que esté creando.
+		Proporciona una lista con varios formatos de BURBUJAS DE DIALOGO, de las cuales el usuario puede escoger las que más se ajuste a su necesidad. El usuario podrá EDITAR EL TEXTO dentro de la burbuja de dialogo que haya escogido, convirtiendo a los miembros de 		la fotografía en auténticos personajes.
+		Al terminar de crear caricaturas, se podrán guardar en la galería fotográfica en distintos FORMATOS.
+					
+		
+
+% Bibliography
+%-----------------------------------------------------------------
+\begin{thebibliography}{99}
+
+\bibitem{Cd94} Author, \emph{Title}, Journal/Editor, (year)
+
+\end{thebibliography}
+
+\end{document}
